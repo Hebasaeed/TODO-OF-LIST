@@ -1,0 +1,11 @@
+
+
+<input type="text" [(ngModel)]="todoItem">
+<button (click)="addTodo(todoItem)">Add todo</button>
+
+<p *ngFor="let todoItem of todos; index as i;">
+   {{i}}=>{{todoItem}} 
+    
+ <button (click)="deleteTodo(i)">Delete todo</button>
+    
+</p>
